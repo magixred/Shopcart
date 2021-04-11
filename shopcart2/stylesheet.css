@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #222;
+}  
+.navbar{
+  padding: .8rem;
+}
+navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+.carousel-inner img {
+  width:50%;
+  height: 100%
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 63%;
+  transform: translateY(-63%);
+}
+.carousel-caption h2 {
+  font-size: 400%
+  text-transform: uppercase;
+  text-shadow: 1px 10px 15px #000
+}
+.carousel-caption h5 {
+  font-size: 200%
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000
+  padding-bottom 1rem;
+}
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #563d7c;
+}
+.btn-primary:hover{
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+@media (max-width: 768px) {
+.carousel-caption{
+  top: 53%;
+  }
+  .carousel-caption h2 {
+    font-size: 200
+  }
+  .carousel-caption h5 {
+    font-size: 100%
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size:200%;
+  }
+  .social a {
+      font-size: 2.5em;
+      padding: 1.2rem;
+  }
+  @media (max-width: 576px) {  
+    .carousel-caption{
+    top: 48%;
+  }
+  .carousel-caption h2 {
+    font-size: 150%;
+  }
+  .carousel-caption h5 {
+    font-size: 70%
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+}
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+.carousel-items {
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+}
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
